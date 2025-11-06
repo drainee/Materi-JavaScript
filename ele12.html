@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: Consolas, monospace;
+        }
+        pre {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-left: 3px solid #007bff;
+            overflow-x: auto;
+        }
+        footer {
+            text-align: center;
+            background-color: #222;
+            color: white;
+            padding: 10px;
+            margin-top: 30px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pengenalan JavaScript</h1>
+        <p>Bahasa Pemrograman untuk Web Interaktif</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Apa itu JavaScript?</h2>
+            <p>
+                <strong>JavaScript</strong> adalah bahasa pemrograman yang digunakan untuk membuat halaman web menjadi dinamis dan interaktif. 
+                Dengan JavaScript, kamu dapat menambahkan animasi, memvalidasi form, menampilkan data secara real-time, dan banyak lagi.
+            </p>
+        </section>
+
+        <section>
+            <h2>Contoh Kode JavaScript</h2>
+            <p>Berikut contoh sederhana untuk menampilkan pesan di konsol:</p>
+            <pre><code>console.log("Halo, JavaScript!");</code></pre>
+
+            <p>Atau menampilkan pesan di halaman web:</p>
+            <pre><code>document.write("Selamat datang di dunia JavaScript!");</code></pre>
+        </section>
+
+        <section>
+            <h2>Contoh Interaksi</h2>
+            <p>Klik tombol di bawah ini untuk melihat contoh interaksi dengan JavaScript:</p>
+            <button onclick="tampilkanPesan()">Klik Saya!</button>
+
+            <p id="pesan"></p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Belajar JavaScript Dasar | Dibuat oleh Indra
+    </footer>
+
+    <script>
+        function tampilkanPesan() {
+            const pesan = document.getElementById("pesan");
+            pesan.textContent = "Tombol berhasil diklik! 🎉 JavaScript bekerja dengan baik.";
+        }
+    </script>
+
+</body>
+</html>
